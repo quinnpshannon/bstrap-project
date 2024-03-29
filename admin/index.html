@@ -7,34 +7,34 @@
     <title>Bootstrap Admin Project</title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container">
+    <nav class="navbar bg-body-tertiary sticky-top">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="Cool Star Logo" width="30">
                 Cool Star Website!
             </a>
         </div>
     </nav>
-    <div class="row">
-        <div class="col-1 text-left bg-primary-subtle">
+    <div class="container row">
+        <div class="col-1 text-left bg-primary-subtle position-start-fixed">
             <h3>Admin</h3>
-            <ul>
-                <li><a href="#traffic">Traffic</a></li>
-                <li><a href="#approval">Approvals</a></li>
-                <li><a href="#upload">Uploads</a></li>
-                <li><a href="#create">New Page</a></li>
-            </ul>
+            <div class="list-group">
+                <a href="#traffic">Traffic</a>
+                <a href="#approval">Approvals</a>
+                <a href="#upload">Uploads</a>
+                <a href="#create">New Page</a>
+            </div>
             <h3>Menu</h3>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#notif">Notifications</a></li>
-                <li><a href="#social">Social Media</a></li>
-                <li></li>
-                <li><a href="#setting">Settings</a></li>
-            </ul>
+            <div class="list-group">
+                <a href="#profile">Profile</a>
+                <a href="#notif">Notifications</a>
+                <a href="#social">Social Media</a>
+                <a href="#setting">Settings</a>
+            </div>
         </div>
+        <div class="col-10">
         <!--Admin Column-->
-        <div class="col text-left bg-secondary-subtle">
+        <div class="row text-left bg-secondary-subtle">
             <div id="traffic">
                 Here is where I will store "Site Traffic"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
             </div>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <!-- User column -->
-        <div class="col">
+        <div class="row text-left bg-tertiary-subtle">
             <div id="profile">
                 Here is where I will store "Profile"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
             </div>
@@ -64,6 +64,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <!--Here is where the Bootstrap Javascript goes-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
