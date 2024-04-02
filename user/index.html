@@ -4,48 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Bootstrap User Project</title>
+    <title>QuinnShannon User Page</title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo.png" alt="Cool Star Logo" width="30">
-                Cool Star Website!
-            </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Cool Star Logo" width="30">
+            Cool Star Website!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  User
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#profile">Profile</a></li>
+                  <li><a class="dropdown-item" href="#notif">Notifications</a></li>
+                  <li><a class="dropdown-item" href="#social">Social Media</a></li>
+                </ul>
+                </li>
+                <li class="ms-auto"><a class="nav-link" href="#">Logout</a></li>
+            </ul>
+          </div>
         </div>
     </nav>
-    <div class="row">
-        <div class="col-1 text-left bg-primary-subtle">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#notif">Notifications</a></li>
-                <li><a href="#social">Social Media</a></li>
-                <li></li>
-                <li><a href="#setting">Settings</a></li>
-            </ul>
+    <section class="container bg-primary">
+        <div id="profile">
+            <h2>Profile</h2>
+            <div class="row">
+                <div class="col">
+                    <img src="./images/UserIcon.png" alt="profilepic" width="100%">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01">Upload New</label>
+                        <input type="file" class="form-control" id="inputGroupFile01">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group mb-2">
+                        <span class="input-group-text" id="basic-addon1">Display Name</span>
+                        <input type="text" class="form-control" placeholder="QuinnShannon" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">email</span>
+                        <input type="text" class="form-control" placeholder="QuinnShannon@website.pizza" aria-label="email" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Website</span>
+                        <input type="text" class="form-control" placeholder="website.pizza" aria-label="Website" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Bio</span>
+                        <textarea class="form-control" aria-label="With textarea" style="height: 200px; resize: none;"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- User column -->
-        <div class="col">
-            <div id="profile">
-                Here is where I will store "Profile"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-            </div>
-            <div id="notif">
-                Here is where I will store "Notifications"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-            </div>
-            <div id="social">
-                Here is where I will store "Social Media"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-            </div>
-            <div id="setting">
-                Here is where I will store "Settings"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-                Here is where I will store "Settings"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-                Here is where I will store "Settings"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-                Here is where I will store "Settings"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
-                Here is where I will store "Settings"<br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores fuga cupiditate quia officiis doloribus sint vitae repellendus dolor ea porro. Ut eum, voluptatibus dolor saepe necessitatibus quam! Culpa repudiandae id aut accusantium, esse fugiat aliquid facere cumque? Ut nemo tenetur dolor incidunt possimus necessitatibus consequatur corrupti facere molestias, doloribus quae, libero laborum iste nostrum? Corporis corrupti quam fugiat libero placeat dolore porro voluptas enim, quos voluptatibus sequi quisquam natus voluptatem reiciendis tempora accusantium. Eligendi officia excepturi itaque distinctio soluta voluptas, quibusdam at exercitationem asperiores porro ab culpa vel quia consequatur voluptates! Necessitatibus hic magnam placeat. Sit magni iusto, cum dolore soluta officia maiores amet praesentium alias nemo voluptatibus quidem vel? Architecto iste dolor sint laudantium, explicabo impedit. Necessitatibus sit illum, a consequatur officiis possimus amet eos aliquam facere error maiores sequi nostrum cum commodi eveniet accusantium at qui. Minima vitae, voluptas eveniet placeat ullam velit? Odit minima id quis, quidem suscipit iusto eius nam aperiam ea omnis corrupti aspernatur harum vitae facere inventore, velit reiciendis esse! Eos doloribus cupiditate nobis tempore autem labore, aspernatur modi maxime possimus distinctio magnam, itaque quo doloremque in veniam placeat, sequi voluptatem debitis id corrupti facilis iure inventore? Necessitatibus, error, corporis accusantium nulla omnis quis maxime hic reiciendis officiis repellendus adipisci impedit dolor optio, aperiam porro animi. Tempore odit unde fugiat corporis molestias temporibus obcaecati quas eligendi, nam asperiores numquam debitis hic ab veniam non, nostrum possimus omnis! Perspiciatis animi delectus expedita voluptates earum libero ut, aliquam eius, sequi facilis distinctio provident magnam assumenda aspernatur!
+        <div id="notif">
+            <h3>Notifications</h3>
+            <div class="row">
+                Do you want Notifications?
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio">
+                        <label class="form-check-label" for="flexRadio">
+                            Absolutely
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio"   id="flexRadioChecked" checked>
+                        <label class="form-check-label" for="flexRadioChecked">
+                            Absolutely Not
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="social">
+            <h3>Social Media</h3>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Twitter</span>
+                <input type="text" class="form-control" placeholder="QuinnShannon" aria-label="Website" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Facebook</span>
+                <input type="text" class="form-control" placeholder="QuinnShannon" aria-label="Website" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">LinkedIn</span>
+                <input type="text" class="form-control" placeholder="QuinnShannon" aria-label="Website" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Discord</span>
+                <input type="text" class="form-control" placeholder="QuinnShannon" aria-label="Website" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </section>
+
     <!--Here is where the Bootstrap Javascript goes-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
